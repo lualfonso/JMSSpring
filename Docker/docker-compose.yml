@@ -1,0 +1,10 @@
+mq:
+  container_name: localmq
+  build: .
+  ports:
+    - "1414:1414"
+    - "9443:9443"
+  environment:
+    - LICENSE=accept
+    - MQ_QMGR_NAME=LOCAL.DOCKER.QMGR
+
