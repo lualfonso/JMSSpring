@@ -7,10 +7,6 @@ package com.lalfonso.jsmspring.server;
 
 import lombok.Data;
 
-/**
- *
- * @author Luis
- */
 @Data
 public class MQServer {
     private String name;

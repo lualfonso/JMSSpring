@@ -16,10 +16,7 @@ import org.springframework.jms.config.JmsListenerEndpointRegistrar;
 import org.springframework.jms.config.SimpleJmsListenerEndpoint;
 import org.springframework.jms.core.JmsTemplate;
 
-/**
- *
- * @author Luis
- */
+
 @Configuration
 @EnableJms
 public class ReaderConfig implements JmsListenerConfigurer {

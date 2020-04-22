@@ -11,6 +11,7 @@ import com.ibm.mq.jms.MQConnectionFactory;
 import com.ibm.msg.client.wmq.WMQConstants;
 import java.util.HashMap;
 import javax.jms.JMSException;
+import javax.jms.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -21,7 +21,11 @@ public class QueueController {
     
     @GetMapping("/send")
     public String send() {
-        writerFactory.get("default").convertAndSend("Hello");
+        writerFactory.get("default").convertAndSend("Hello", messagePostProcessor -> {
+            messagePostProcessor.setStringProperty("type",
+                "default");
+            return messagePostProcessor;
+          });
         return "OK";
     }
 }
